@@ -37,6 +37,11 @@ nav .nav-links a {
   color: black;
 }
 
+.theme-switcher--icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* hero section */
 
 .hero {
@@ -179,6 +184,17 @@ form {
   border-radius: 5px;
 }
 
+/* Dark mode styles */
+
+body.dark {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark nav .nav-links a {
+  color: #ffffff;
+}
+
 /*  Media queries */
 @media (max-width: 900px) {
   body {
@@ -189,7 +205,7 @@ form {
     font-size: 1rem;
   }
 
-  nav .nav-links {
+  nav .nav-links a {
     display: none;
   }
 
