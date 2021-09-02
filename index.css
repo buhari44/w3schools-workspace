@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  padding: 2rem 5rem;
+}
+
+/*  navbar section*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand-name {
+  font-size: 1.5rem;
+}
+
+.brand-name span,
+.services span {
+  color: orange;
+}
+
+nav .nav-links a {
+  padding: 0.8rem;
+  margin: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  /* border: 1px solid black; */
+  color: black;
+}
+
+/* hero section */
+
+.hero {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right .hero-text {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-action--btn {
+  padding: 12px 32px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins";
+  text-transform: capitalize;
+  background-color: orange;
+  color: white;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* Services */
+
+.services {
+  margin-top: 5rem;
+}
+
+.heading {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.services-card-wrapper {
+  display: flex;
+}
+
+.service-card {
+  width: 25%;
+  padding-right: 1rem;
+  text-align: center;
+
+  /*  */
+  border: 1px solid #ccc;
+  padding: 2rem;
+  margin: 0 0.8rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: orange;
+}
+
+.service-heading {
+  margin: 1rem 0;
+}
+
+.service-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.contact .heading {
+  color: orange;
+}
+
+form {
+  width: 40%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper input {
+  height: 4rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Poppins";
+}
+
+.input-wrapper textarea {
+  height: 10rem;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: "Poppins";
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 12px 32px;
+  font-size: 28px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/*  Media queries */
+@media (max-width: 900px) {
+  body {
+    padding: 2rem;
+  }
+
+  nav .brand-name {
+    font-size: 1rem;
+  }
+
+  nav .nav-links {
+    display: none;
+  }
+
+  /* hero section */
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-right {
+    margin-top: 2rem;
+  }
+
+  .hero-right .hero-text {
+    font-size: 1.75rem;
+  }
+
+  .services-card-wrapper {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* contact */
+
+  .contact .heading {
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 100%;
+  }
+}
